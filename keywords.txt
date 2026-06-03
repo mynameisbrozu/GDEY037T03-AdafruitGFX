@@ -1,0 +1,11 @@
+# Classes
+GDEY037T03	KEYWORD1
+GDcanvas	KEYWORD1
+
+#Functions
+begin	KEYWORD2
+screenShow	KEYWORD2
+screenWhite	KEYWORD2
+screenBlack	KEYWORD2
+screenShowPart	KEYWORD2
+clearBuffer	KEYWORD2
