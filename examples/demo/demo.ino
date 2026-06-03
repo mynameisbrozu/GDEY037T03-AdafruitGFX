@@ -51,19 +51,19 @@ void playDemo(){
 
   /// 2. Cycle through four rotation demo bitmaps using partial updates.
   canvas.setRotation(0);
-  canvas.drawBitmap(0, 0, rot0, EPD_HEIGHT, EPD_WIDTH, 0x00, 0xFF);
+  canvas.drawBitmap(0, 0, rot0, EPD_HEIGHT, EPD_WIDTH, EPD_BLACK, EPD_WHITE);
   epaper.screenShow(canvas.getBuffer());
   delay(3000);
   canvas.setRotation(1);
-  canvas.drawBitmap(0, 0, rot1,EPD_WIDTH, EPD_HEIGHT, 0x00, 0xFF);
+  canvas.drawBitmap(0, 0, rot1,EPD_WIDTH, EPD_HEIGHT, EPD_BLACK, EPD_WHITE);
   epaper.screenShowPart(canvas.getBuffer());
   delay(3000);
   canvas.setRotation(2);
-  canvas.drawBitmap(0, 0, rot2, EPD_HEIGHT, EPD_WIDTH, 0x00, 0xFF);
+  canvas.drawBitmap(0, 0, rot2, EPD_HEIGHT, EPD_WIDTH, EPD_BLACK, EPD_WHITE);
   epaper.screenShowPart(canvas.getBuffer());
   delay(3000);
   canvas.setRotation(3);
-  canvas.drawBitmap(0, 0, rot3, EPD_WIDTH, EPD_HEIGHT, 0x00, 0xFF);
+  canvas.drawBitmap(0, 0, rot3, EPD_WIDTH, EPD_HEIGHT, EPD_BLACK, EPD_WHITE);
   epaper.screenShowPart(canvas.getBuffer());
   delay(3000);
 
@@ -74,7 +74,7 @@ void playDemo(){
    *  Scan Options：Scan from bottom to top, Color reversal
    */ 
   canvas.setRotation(1);
-  canvas.drawBitmap(0, 0 , qr, EPD_WIDTH, EPD_HEIGHT, 0x00, 0xFF);
+  canvas.drawBitmap(0, 0 , qr, EPD_WIDTH, EPD_HEIGHT, EPD_BLACK, EPD_WHITE);
   epaper.screenShow(canvas.getBuffer(), 1);
   delay(10000);
 
